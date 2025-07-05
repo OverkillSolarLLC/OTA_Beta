@@ -1,6 +1,10 @@
 # OTA_Beta
 
-# Pathfinder BMS firmware change log July 3 2025
+# Pathfinder BMS firmware change log July 5 2025
+
+## V_0.222_BETA
+ - Bug fix: Prevent learning cycle instructions from repeating after the cycle is finished.
+ - Added Learning cycle "Stage" to non-volatile storage. When the BMS reboots after this update, the stage variable will be lost, but thereafter it will be retained. This does not interrupt the Learning cycle but it will interrupt the sequencing of the on-screen instructions if a learning cycle is already active.
 
 ## V_0.221_BETA
  - Bug fix: disabling radio power freezes the user interface
@@ -38,7 +42,6 @@ Note: some BMSs were shipped with V_0.215_BETA, but the OTA and UF2 files were b
 - Bug fix: Wifi scan failed if radio power disabled. Added a warning and prevent starting the scan.    
 - Bug fix: Antenna light sometimes stuck on when radio power is disabled.   
 - Bug fix: restart BLE advertising after cycling radio power.
-
 
 ## V_0.129_BETA 
 Initial release, shipped with all Pathfinder BMSs from lot 1
