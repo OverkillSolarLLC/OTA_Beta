@@ -1,6 +1,22 @@
 # OTA_Beta
 
-# Pathfinder BMS firmware change log July 5 2025
+# Pathfinder BMS firmware change log July 28 2025
+
+## V_0.300_STABLE
+ - New feature: selectable SOC tracking algorithms.
+ 	- Simplified learning cycle
+ - Enabled the Serial API on the UART port in addition to the USB port. (Also published the API documentation, see github.com/OverkillSolarLLC/documentation)
+ - New feature: Customizable .CSV formatted streaming logs on UART and USB ports.
+ - New feature: Click "always ask" to un-reject a previously rejected OTA update.
+ - New feature: Raw coulomb counter with OLED monitoring screen.
+
+ - bug fix: unable to set short circuit parameter to max value.
+ - bug fix: report lot code correctly
+ - bug fix: Some of the event counts were mapped to the wrong values.
+ - bug fix: NTC1 events not incrementing event count.
+ - bug fix: turn on fault led for NTC1 events.
+ - bug fix: enable OCD3 protection (L1 DSG Overcurrent)
+ - bug fix: L1 & L2 Fault recovery time mapped to wrong register.
 
 ## V_0.222_BETA
  - Bug fix: Prevent learning cycle instructions from repeating after the cycle is finished.
