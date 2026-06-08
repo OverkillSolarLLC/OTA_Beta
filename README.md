@@ -1,7 +1,18 @@
 # OTA_Beta
 
-# Pathfinder BMS firmware change log August 19 2025
+# Pathfinder BMS firmware change log June 8 2026
 
+### NOTE: Units that ship with V0.308 or later should not downgrade the FW version or the buttons will stop working.
+
+## V_0.309_BETA
+ - Bugfix: disable Permanent Fail Protections during the manual balancer test
+ - Add support for V1.3 UI board hardware with discrete UI button inputs.
+## V_0.308_BETA
+ - Bugfix: add temperature compensation to analog UI button inputs
+ - Increased current deadband to 8 ticks
+## V_0.307_BETA
+ - Adds a manufacturing test to calibrate null current and test UI buttons.
+ - No visible changes after manufacturing. This version was not published via OTA.
 ## V_0.305_STABLE
  - Bug fix: add function to clear alarm event counts.
  - Bug fix: MQTT power mapped to wrong data.
